@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fa;
+}
+
+.order-success-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    background-image: url('../../public/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.order-success-card,
+.order-fail-card {
+    padding: 50px 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-success-card {
+    background: linear-gradient(135deg, lightseagreen 0%, #20b2aa 100%);
+}
+
+.order-fail-card {
+    background: linear-gradient(135deg, lightcoral 0%, #ff7f7f 100%);
+}
+
+.order-success-card::before,
+.order-success-card::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.order-success-card::before {
+    top: -50px;
+    right: -50px;
+}
+
+.order-success-card::after {
+    bottom: -50px;
+    left: -50px;
+}
+
+.checkmark-container {
+    background: white;
+    border-radius: 50%;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.checkmark-icon {
+    width: 50px;
+}
+
+.awesome-message,
+.congrats-message,
+.delivery-message {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1s ease;
+}
+
+.awesome-message {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.congrats-message {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.delivery-message {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.payment-options-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.list-group-item {
+    padding: 3px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.list-group-item:hover {
+    background-color: #e2e6ea;
+}
+
+.active {
+    background-color: 007bff !important;
+    color: #fff;
+}
+
+.payment-form {
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input.form-control,
+textarea.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button.btn-success {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn-success:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+.error{
+    color: red;
+}

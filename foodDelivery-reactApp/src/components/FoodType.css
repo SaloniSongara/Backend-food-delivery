@@ -1,0 +1,102 @@
+.mainContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    width: 18rem;
+    cursor: pointer;
+}
+
+.foodType {
+    height: 210px;
+    width: 286px;
+}
+
+.food-card {
+    margin: 20px;
+    max-width: 300px;
+}
+
+.food-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.added-button {
+    display: flex;
+    justify-content: end;
+    margin: 25px;
+}
+
+.TIbutton {
+    background-color: beige;
+    padding: 11px;
+}
+
+.AI-P-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pricebtn {
+    background-color: crimson;
+}
+
+.login-form {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav1-bg {
+    background-color: crimson;
+}
+
+.SMbtn, .selected {
+    background-color: crimson !important;
+}
+
+.text-white {
+    font-size: small;
+    text-decoration: none;
+}
+
+.notselected {
+    background-color: crimson !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.btns {
+    display: flex;
+}
+
+.btnOn {
+    margin-right: 5px;
+}
+
+.btnLO {
+    margin-left: 5px;
+}
+
+.cardFP {
+    width: 100%;
+}
+
+.foodType1 {
+    height: 250px;
+}
+
+.error{
+    color: red;
+}
